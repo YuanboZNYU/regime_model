@@ -14,7 +14,7 @@ class index_data:
         self.rebal_date = kwargs.get('rebal_date', '01')
 
     def index_data_loading(self):
-        base_dir = os.path.join('/mnt','c','workspace','project_quant')
+        base_dir = os.path.join('.')
         index_data_dir = os.path.join(base_dir,'data','index_data')
 
         result_df = pd.DataFrame()
@@ -54,7 +54,7 @@ class index_data:
     
 
     def index_cum_data_loading(self):
-        base_dir = os.path.join('/mnt','c','workspace','project_quant')
+        base_dir = os.path.join('.')
         index_data_dir = os.path.join(base_dir,'data','index_data')
 
         result_df = pd.DataFrame()
